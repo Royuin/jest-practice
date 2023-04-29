@@ -19,3 +19,7 @@ test('calculator subraction', () => {
 test('calculator division', () => {
   expect(calculator.divide(50, 2)).toBe(25);
 });
+
+test('calculator multiplication', () => {
+  expect(calculator.multiply(5, 3)).toBe(15);
+});
