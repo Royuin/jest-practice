@@ -3,3 +3,10 @@ export function capitalize(str) {
   const result = firstLetter + str.slice(1);
   return result;
 }
+
+export function reverseString(str) {
+  const array = Array.from(str);
+  const reverseArray = array.reverse();
+  const result = reverseArray.join('');
+  return result;
+}
