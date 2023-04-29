@@ -11,3 +11,7 @@ test('reverseString', () => {
 test('calculator addition', () => {
   expect(calculator.add(3, 7)).toBe(10);
 });
+
+test('calculator subraction', () => {
+  expect(calculator.subtract(1000, 7)).toBe(993);
+});
