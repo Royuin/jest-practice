@@ -10,3 +10,9 @@ export function reverseString(str) {
   const result = reverseArray.join('');
   return result;
 }
+
+export let calculator = {
+  add: function (a, b) {
+    return a + b;
+  },
+};
