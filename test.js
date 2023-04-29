@@ -15,3 +15,7 @@ test('calculator addition', () => {
 test('calculator subraction', () => {
   expect(calculator.subtract(1000, 7)).toBe(993);
 });
+
+test('calculator division', () => {
+  expect(calculator.divide(50, 2)).toBe(25);
+});
