@@ -58,7 +58,7 @@ export function analyzeArray(array) {
   },0)
 const average = sum / array.length;
 
-  return {average}
-}
+const min = Math.min(...array);
 
-console.log(analyzeArray([1,8,3,4,2,6]));
+  return {average, min}
+}
