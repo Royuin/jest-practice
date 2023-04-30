@@ -1,4 +1,4 @@
-import { capitalize, reverseString, calculator, caesarCipher } from './script';
+import { capitalize, reverseString, calculator, caesarCipher, analyzeArray } from './script';
 
 test('capitalize first letter', () => {
   expect(capitalize('foo')).toBe('Foo');
@@ -41,3 +41,7 @@ test('caesar cipher with punctuation', () => {
     'bj bnqq gwjfhm ymj bfqq, fy ifbs!'
   );
 });
+
+test('analyze array returning average of array given', () => {
+  expect(analyzeArray([1,8,3,4,2,6]).average).toBe(4);
+}) 
