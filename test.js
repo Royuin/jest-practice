@@ -1,4 +1,4 @@
-import { capitalize, reverseString, calculator } from './script';
+import { capitalize, reverseString, calculator, caesarCipher } from './script';
 
 test('capitalize first letter', () => {
   expect(capitalize('foo')).toBe('Foo');
@@ -23,3 +23,10 @@ test('calculator division', () => {
 test('calculator multiplication', () => {
   expect(calculator.multiply(5, 3)).toBe(15);
 });
+
+test('caesar cipher with 1 shift', () => {
+  expect(caesarCipher('we will breach the wall at dawn', 1)).toBe(
+    'xf xjmm csfbdi uif xbmm bu ebxo'
+  );
+});
+
