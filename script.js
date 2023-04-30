@@ -60,5 +60,6 @@ const average = sum / array.length;
 
 const min = Math.min(...array);
 const max = Math.max(...array);
-  return {average, min, max}
+const length = array.length;
+  return {average, min, max, length}
 }
