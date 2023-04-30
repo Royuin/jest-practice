@@ -25,3 +25,22 @@ export let calculator = {
     return a * b;
   },
 };
+
+export function caesarCipher(str, shift) {
+  let alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+  let strArray = Array.from(str);
+  let shiftedArray = [];
+  
+  for (let i = 0; i < strArray.length; i++) {
+    let letter = strArray[i];
+    if (!letter.trim()) {
+      shiftedArray.push(' ');
+    }
+    else {
+   let index = alphabet.indexOf(letter);
+   
+   shiftedArray.push(alphabet[index + shift]);
+    }
+  }
+  return shiftedArray.join('');
+}
