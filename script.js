@@ -33,8 +33,8 @@ export function caesarCipher(str, shift) {
   
   for (let i = 0; i < strArray.length; i++) {
     let letter = strArray[i];
-    if (!letter.trim()) {
-      shiftedArray.push(' ');
+   if (!alphabet.includes(letter)) {
+      shiftedArray.push(letter);
     }
     else {
    let index = alphabet.indexOf(letter);
