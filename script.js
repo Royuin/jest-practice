@@ -51,3 +51,14 @@ export function caesarCipher(str, shift) {
   }
   return shiftedArray.join('');
 }
+
+export function analyzeArray(array) {
+  const sum = array.reduce((total, item) => {
+    return total + item;
+  },0)
+const average = sum / array.length;
+
+  return {average}
+}
+
+console.log(analyzeArray([1,8,3,4,2,6]));
