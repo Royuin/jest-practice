@@ -35,3 +35,9 @@ test('caesar cipher with 5 shift and wrapping from z to a', () => {
     'bj bnqq gwjfhm ymj bfqq fy ifbs'
   );
 });
+
+test('caesar cipher with punctuation', () => {
+  expect(caesarCipher('we will breach the wall, at dawn!', 5)).toBe(
+    'bj bnqq gwjfhm ymj bfqq, fy ifbs!'
+  );
+});
