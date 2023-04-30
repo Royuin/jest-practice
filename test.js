@@ -49,3 +49,7 @@ test('analyze array returning average of array given', () => {
 test('analyze array returning key with minimum value of array given', () => {
   expect(analyzeArray([1,8,3,4,2,6]).min).toBe(1); 
 }); 
+
+test('analyze array returning ket with maximum value of given array', () => {
+  expect(analyzeArray([1,8,3,4,2,6]).max).toBe(8); 
+});
