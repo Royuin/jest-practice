@@ -59,6 +59,6 @@ export function analyzeArray(array) {
 const average = sum / array.length;
 
 const min = Math.min(...array);
-
-  return {average, min}
+const max = Math.max(...array);
+  return {average, min, max}
 }
