@@ -30,3 +30,8 @@ test('caesar cipher with 1 shift', () => {
   );
 });
 
+test('caesar cipher with 5 shift and wrapping from z to a', () => {
+  expect(caesarCipher('we will breach the wall at dawn', 5)).toBe(
+    'bj bnqq gwjfhm ymj bfqq fy ifbs'
+  );
+});
