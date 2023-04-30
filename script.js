@@ -38,8 +38,15 @@ export function caesarCipher(str, shift) {
     }
     else {
    let index = alphabet.indexOf(letter);
-   
+   if ((index + shift) > (alphabet.length - 1)) {
+    
+    let remainder = (alphabet.length -1) - index;
+    index = Math.abs(remainder - shift)
+    shiftedArray.push(alphabet[index - 1]); 
+  }
+ else {
    shiftedArray.push(alphabet[index + shift]);
+ }
     }
   }
   return shiftedArray.join('');
